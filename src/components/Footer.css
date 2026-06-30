@@ -1,0 +1,233 @@
+/* ===========================
+   Footer
+=========================== */
+
+.footer{
+    background:#081423;
+    padding:22px 15px;
+    border-top:1px solid rgba(59,130,246,.15);
+    text-align:center;
+}
+
+.footer p{
+    margin:0;
+    color:#8892B0;
+    font-size:15px;
+    letter-spacing:.5px;
+}
+
+.footer span{
+    color:#3B82F6;
+    font-weight:600;
+}
+
+/* ===========================
+   Floating Buttons
+=========================== */
+.footer p span{
+    font-style: italic;
+}
+.whatsapp-float,
+.rocket-float{
+
+    position:fixed;
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    font-size:30px;
+
+    color:#fff;
+
+    transition:.4s;
+
+}
+
+/* WhatsApp */
+
+.whatsapp-float{
+
+    left:28px;
+
+    bottom:28px;
+
+    background:#25D366;
+
+    box-shadow:0 10px 30px rgba(37,211,102,.35);
+
+}
+
+/* Rocket */
+
+.rocket-float{
+
+    right:28px;
+
+    bottom:28px;
+
+    background:#3B82F6;
+
+    box-shadow:0 10px 30px rgba(59,130,246,.35);
+
+}
+
+/* Hover */
+
+.whatsapp-float:hover{
+
+    color:#fff;
+
+    transform:translateY(-8px) scale(1.08);
+
+    box-shadow:0 18px 40px rgba(37,211,102,.55);
+
+}
+
+.rocket-float:hover{
+
+    color:#fff;
+
+    transform:translateY(-8px) scale(1.08) rotate(-25deg);
+
+    box-shadow:0 18px 40px rgba(59,130,246,.55);
+
+}
+
+/* Pulse Animation */
+
+.whatsapp-float{
+
+    animation:
+    pulseGreen 2s infinite,
+    float 3.5s ease-in-out infinite;
+
+}
+
+.rocket-float{
+
+    animation:
+    pulseBlue 2s infinite,
+    float 3.5s ease-in-out infinite;
+
+}
+
+@keyframes pulseGreen{
+
+0%{
+
+box-shadow:0 0 0 0 rgba(37,211,102,.6);
+
+}
+
+70%{
+
+box-shadow:0 0 0 18px rgba(37,211,102,0);
+
+}
+
+100%{
+
+box-shadow:0 0 0 0 rgba(37,211,102,0);
+
+}
+
+}
+
+@keyframes pulseBlue{
+
+0%{
+
+box-shadow:0 0 0 0 rgba(59,130,246,.6);
+
+}
+
+70%{
+
+box-shadow:0 0 0 18px rgba(59,130,246,0);
+
+}
+
+100%{
+
+box-shadow:0 0 0 0 rgba(59,130,246,0);
+
+}
+
+}
+
+/* Floating */
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.whatsapp-float{
+
+left:18px;
+
+bottom:18px;
+
+width:56px;
+
+height:56px;
+
+font-size:26px;
+
+}
+
+.rocket-float{
+
+right:18px;
+
+bottom:18px;
+
+width:56px;
+
+height:56px;
+
+font-size:24px;
+
+}
+
+.footer p{
+
+font-size:13px;
+
+line-height:1.7;
+
+}
+
+}
