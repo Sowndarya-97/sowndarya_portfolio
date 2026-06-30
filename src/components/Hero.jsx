@@ -190,7 +190,7 @@ const Hero = () => {
               </div>
 
               <img
-                src="/profile.jpg"
+                src="/profile.jpeg"
                 alt="profile"
                 className="profile-image"
                 data-aos="zoom-in"
