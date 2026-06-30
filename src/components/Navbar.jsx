@@ -22,7 +22,7 @@ const Navbar = () => {
 
           <li>
             <a
-              href="/resume.pdf"
+              href="/Sowndarya_fsd_resume.pdf"
               className="resume-btn"
               download
             >

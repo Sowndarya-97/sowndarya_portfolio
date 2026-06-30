@@ -104,7 +104,7 @@ const Hero = () => {
               data-aos-delay="600"
             >
 
-              <a href="/resume.pdf" className="btn-download">
+              <a href="/Sowndarya_fsd_resume.pdf" className="btn-download">
                 Download Resume
               </a>
 
@@ -120,21 +120,47 @@ const Hero = () => {
               data-aos-delay="700"
             >
 
-              <a href="#">
-                <FaGithub />
-              </a>
+              
 
-              <a href="#">
-                <FaLinkedin />
-              </a>
+  {/* GitHub */}
+  <a
+    href="https://github.com/Sowndarya-97"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+  >
+    <FaGithub />
+  </a>
 
-              <a href="#">
-                <FaWhatsapp />
-              </a>
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/sowndarya-sakthi97"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <FaLinkedin />
+  </a>
 
-              <a href="#">
-                <FaEnvelope />
-              </a>
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/919489161597"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+  >
+    <FaWhatsapp />
+  </a>
+
+  {/* Email */}
+  <a
+    href="mailto:smartsowndarya06@gmail.com"
+    aria-label="Email"
+  >
+    <FaEnvelope />
+  </a>
+
+
 
             </div>
 
